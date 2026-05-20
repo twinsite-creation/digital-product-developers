@@ -1766,7 +1766,7 @@ h2 em {
     flex-direction: column;
   }
   .card-media {
-    min-height: 220px;
+    min-height: 240px;
   }
   /*  .card-info {
     opacity: 1;

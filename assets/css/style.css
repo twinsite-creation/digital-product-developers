@@ -2060,10 +2060,14 @@ h2 em {
 /* На мобільних — менша, без тексту */
 @media (max-width: 600px) {
   .tg-float-btn {
-    bottom: 60px;
+    bottom: 200px;
   }
 
   .tg-float-label {
     display: none;
+  }
+
+  .back-to-top {
+    bottom: 60px;
   }
 }

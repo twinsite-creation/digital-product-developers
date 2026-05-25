@@ -576,7 +576,7 @@ h2 em {
 .btn--ghost {
   display: inline-flex;
   align-items: center;
-  padding: 0.82em 2em;
+  padding: 8px 12px;
   background: transparent;
   color: var(--color-white);
   font-family: var(--font-display);
@@ -1227,10 +1227,10 @@ h2 em {
 
 .back-to-top {
   position: fixed;
-  right: 11px;
+  right: 10px;
   bottom: 24px;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 
   border: none;
   border-radius: 50%;
@@ -1978,18 +1978,23 @@ h2 em {
   justify-content: space-between;
   gap: 20px;
 
-  padding: 16px 20px;
+  padding: 14px;
   border-radius: 20px;
 
   background: color-mix(in srgb, var(--color-accent) 70%, transparent);
 
   color: var(--color-white);
   font-size: 14px;
+  line-height: 1.1;
 
   opacity: 0;
   pointer-events: none;
 
   transition: all 0.4s ease;
+}
+
+.cookie .btn--primary {
+  padding: 8px 12px;
 }
 
 .cookie.active {
@@ -2017,5 +2022,48 @@ h2 em {
 
   .cookie__actions button {
     width: 100%;
+  }
+}
+
+/* Telegram Float Button — vertical */
+.tg-float-btn {
+  position: fixed;
+  bottom: 100px;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #229ed9;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -4px 4px 20px rgba(34, 158, 217, 0.4);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.tg-float-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+}
+
+/* На мобільних — менша, без тексту */
+@media (max-width: 600px) {
+  .tg-float-btn {
+    bottom: 60px;
+  }
+
+  .tg-float-label {
+    display: none;
   }
 }

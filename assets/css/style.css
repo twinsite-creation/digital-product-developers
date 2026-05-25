@@ -2061,7 +2061,6 @@ h2 em {
 @media (max-width: 600px) {
   .tg-float-btn {
     bottom: 200px;
-    border: 2px solid #f00;
   }
 
   .tg-float-label {

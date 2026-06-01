@@ -1902,56 +1902,6 @@ h2 em {
   }
 }
 
-.cookie-banner {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 40px);
-  max-width: 900px;
-  background: rgba(15, 15, 25, 0.95);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
-  padding: 20px;
-  z-index: 9999;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-  animation: fadeUp 0.5s ease;
-}
-
-.cookie-banner__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.cookie-banner__text {
-  color: #fff;
-  font-size: 14px;
-  max-width: 600px;
-}
-
-.cookie-banner__actions {
-  display: flex;
-  gap: 10px;
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .cookie-banner__inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .cookie-banner__actions {
-    width: 100%;
-  }
-
-  .cookie-banner__actions button {
-    width: 100%;
-  }
-}
-
 /* animation */
 @keyframes fadeUp {
   from {

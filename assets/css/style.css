@@ -2436,6 +2436,8 @@ h2 em {
   font-weight: 600;
   color: var(--color-accent);
   transition: gap var(--transition);
+  position: relative;
+  z-index: 10;
 }
 
 .skill-card__link:hover {

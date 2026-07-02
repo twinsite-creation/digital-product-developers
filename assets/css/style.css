@@ -1352,9 +1352,11 @@ h2 em {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin: -40px 0 40px;
 }
 
+.portfolio--inner {
+  margin: -40px 0 40px;
+}
 .portfolio-header__label {
   font-size: 0.68rem;
   font-weight: 600;

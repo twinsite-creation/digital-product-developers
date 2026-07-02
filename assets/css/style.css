@@ -1352,8 +1352,7 @@ h2 em {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.5rem;
-  opacity: 0;
-  transform: translateY(20px);
+  margin: -40px 0 40px;
 }
 
 .portfolio-header__label {
